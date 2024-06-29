@@ -1,17 +1,43 @@
-Step to run application locally:
-Step 1:	Create the copy of the project.
-Step 2: Open command prompt and change your current path
-to folder where you can find 'app.py' file.
-Step 3: Create environment by command given below-
-conda create -name <environment name>
-Step 4: Activate environment by command as follows-
-conda activate <environment name>
-Step 5: Install tesseract using windows installer available at: https://github.com/UB-Mannheim/tesseract/wiki
-Step 6: Note the tesseract path from the installation. Default installation path at the time of this edit was: C:\ProgramFiles\Tesseract-OCR. It may change so please check the installation path.
-Step 7: pytesseract.pytesseract.tesseract_cmd = r'C:\ProgramFiles\Tesseract-OCR\tesseract.exe'
-Step 8: Use command below to install required dependencies-
-python -m pip install -r requirements.txt
-Step 9: Run application by command-
-python app.py
-You will get url copy it and paste in browser.
-Step 10: You have sample_data folder where you can get images to test.
+
+# Steps to Run the Application Locally
+
+1. **Create a copy of the project.**
+
+2. **Open Command Prompt and navigate to the project directory:**
+   Change your current path to the folder where you can find the `app.py` file.
+
+3. **Create a virtual environment:**
+   ```bash
+   conda create -name <environment name>
+   ```
+
+4. **Activate the environment:**
+   ```bash
+   conda activate <environment name>
+   ```
+
+5. **Install Tesseract:**
+   Download and install Tesseract using the Windows installer available at: [Tesseract GitHub](https://github.com/UB-Mannheim/tesseract/wiki).
+
+6. **Note the Tesseract installation path:**
+   The default installation path is `C:\Program Files\Tesseract-OCR`. This may change, so please check the actual installation path.
+
+7. **Set the Tesseract path in your code:**
+   ```python
+   pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+   ```
+
+8. **Install the required dependencies:**
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+9. **Run the application:**
+   ```bash
+   python app.py
+   ```
+   You will get a URL; copy it and paste it into your browser.
+
+10. **Test with sample data:**
+    Use the `sample_data` folder where you can find images to test.
+```
